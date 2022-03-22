@@ -129,6 +129,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation: rotaImgBitcoin 10s linear infinite forwards;
 }
 
 .main-exchange-container h2 {
@@ -151,6 +152,15 @@ main {
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+}
+
+.main-tables-container::-webkit-scrollbar{
+	background-color: var(--soft-orange);
+	height: 3px;
+}
+
+.main-tables-container::-webkit-scrollbar-thumb{
+	background-color: var(--bitcoin-orange);
 }
 
 .main-currency-table {
@@ -380,7 +390,7 @@ main {
   width: 100%;
   min-width: 320px;
   height: 55vh;
-  background-image: url(Assets/img/bitcoinbaby2x.jpg);
+  background-image: url(Assets/img/bitcoinbaby.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -432,6 +442,16 @@ main {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
+
+.plans-container--slider::-webkit-scrollbar{
+	background-color: var(--soft-orange);
+	height: 3px;
+}
+
+.plans-container--slider::-webkit-scrollbar-thumb{
+	background-color: var(--bitcoin-orange);
+}
+
 
 .plans-container--card {
   position: relative;
