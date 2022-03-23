@@ -1,12 +1,13 @@
-/* 
+/*  
+Orden de estilos
+
 1. Posicionaminto
 2. Modelo de caja (Box Model)
 3. Tipografía
 4. Efectos Visuales
-5. otros 
-*/
+5. otros  */
 
-/* Color Variables */
+/* Colores del proyecto */
 :root {
   --bitcoin-orange: #f7931a;
   --soft-orange: #ffe9d5;
@@ -154,13 +155,14 @@ main {
   scroll-snap-type: x proximity;
 }
 
-.main-tables-container::-webkit-scrollbar{
-	background-color: var(--soft-orange);
-	height: 3px;
+/* Funcion Scroll bar en tablas del primer div */
+.main-tables-container::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
 }
 
-.main-tables-container::-webkit-scrollbar-thumb{
-	background-color: var(--bitcoin-orange);
+.main-tables-container::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
 }
 
 .main-currency-table {
@@ -172,10 +174,7 @@ main {
   font-family: "Inter", sans-serif;
 }
 
-
-
 /* Contenedor de tablas */
-
 /* Tabla */
 .main-currency-table .currency-table--title {
   margin-bottom: 15px;
@@ -183,11 +182,10 @@ main {
   font-weight: bold;
   line-height: 2.3rem;
 }
-.main-tables-container .currency-table-1{
+.main-tables-container .currency-table-1 {
   margin-left: 120px;
   margin-right: 50px;
 }
-
 
 .main-currency-table .first-table {
   color: var(--bitcoin-orange);
@@ -230,6 +228,7 @@ main {
 .currency-table--container .table__bottom-right {
   border-radius: 0 0 15px 0;
 }
+
 .currency-table--container .table__right {
   font-size: 1.4rem;
   font-weight: normal;
@@ -269,7 +268,7 @@ main {
   padding: 6px;
   border-radius: 8px;
 }
-.main-tables-container .currency-table-2{
+.main-tables-container .currency-table-2 {
   margin-left: 50px;
   margin-right: 120px;
 }
@@ -443,15 +442,16 @@ main {
   scroll-snap-type: x proximity;
 }
 
-.plans-container--slider::-webkit-scrollbar{
-	background-color: var(--soft-orange);
-	height: 3px;
+/* scroll bar de contenedor de planes */
+
+.plans-container--slider::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
 }
 
-.plans-container--slider::-webkit-scrollbar-thumb{
-	background-color: var(--bitcoin-orange);
+.plans-container--slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
 }
-
 
 .plans-container--card {
   position: relative;
