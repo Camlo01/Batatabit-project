@@ -130,7 +130,6 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: rotaImgBitcoin 10s linear infinite forwards;
 }
 
 .main-exchange-container h2 {
@@ -389,7 +388,7 @@ main {
   width: 100%;
   min-width: 320px;
   height: 55vh;
-  background-image: url(Assets/img/bitcoinbaby.png);
+  background-image: url(/Assets/img/bitcoinbaby.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
