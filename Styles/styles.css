@@ -48,6 +48,19 @@ header img {
   height: 24px;
   margin-top: 60px;
   align-self: center;
+
+  animation-duration: 0.9s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
 .header--title-container {
@@ -57,7 +70,21 @@ header img {
   height: 218px;
   margin-top: 40px;
   align-self: center;
+
+  animation-duration: 0.9s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
 .header--title-container h1 {
   font-size: 2.4rem;
   font-weight: bold;
@@ -83,7 +110,7 @@ header img {
   height: 49px;
   background-color: var(--off-white);
   /* Sombra */
-  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.2);
   border: none;
   border-radius: 5px;
   font-size: 1.4rem;
@@ -91,12 +118,22 @@ header img {
   text-decoration: none;
   color: var(--black);
 }
+.header--title-container .header--buttom:hover {
+  background-color: rgb(210, 207, 207);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+
+  -webkit-transition: background 0.1s;
+}
+
+.header--title-container .header--buttom {
+}
+
 .header--buttom span {
   display: inline-block;
   width: 13px;
   height: 8px;
   margin-left: 10px;
-  background-image: url(Assets/icons/down-arrow.svg);
+  background-image: url(../Assets/icons/down-arrow.svg);
 }
 
 /* SECTION 1 */
@@ -130,8 +167,18 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* se le agrega animacion a la imagen  */
+  animation: rotation 5s infinite linear;
 }
-
+/* se configura la animacion de la imagen */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .main-exchange-container h2 {
   margin-bottom: 30px;
   font-size: 2.4rem;
@@ -354,19 +401,19 @@ main {
 }
 
 .clock {
-  background-image: url(Assets/icons/clock.svg);
+  background-image: url(../Assets/icons/clock.svg);
 }
 
 .eye {
-  background-image: url(Assets/icons/eye.svg);
+  background-image: url(../Assets/icons/eye.svg);
 }
 
 .dollar {
-  background-image: url(Assets/icons/dollar-sign.svg);
+  background-image: url(../Assets/icons/dollar-sign.svg);
 }
 
 .check-circle {
-  background-image: url(Assets/icons/check-circle.svg);
+  background-image: url(../Assets/icons/check-circle.svg);
 }
 
 .product--card-title {
@@ -388,7 +435,7 @@ main {
   width: 100%;
   min-width: 320px;
   height: 55vh;
-  background-image: url(/Assets/img/bitcoinbaby.jpg);
+  background-image: url(../Assets/img/bitcoinbaby.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -466,6 +513,10 @@ main {
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
+.plans-container--card:hover {
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.48);
+}
+
 .recommended {
   position: absolute;
   width: 120px;
@@ -520,7 +571,7 @@ main {
   width: 150px;
   height: 45px;
   background-color: white;
-  border: 2px solid var(--bitcoin-orange);
+  border: 3px solid var(--bitcoin-orange);
   border-radius: 4px;
   font-size: 1.4rem;
   font-weight: bold;
@@ -528,11 +579,18 @@ main {
   color: var(--black);
 }
 
+/* ff8e04 */
+
+.plan-card--ca:hover {
+  background-color: #ff8e04;
+  border: 3px solid #ff8e04;
+}
+
 .plan-card--ca span {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url(Assets/icons/orange-right-arrow.svg);
+  background-image: url(../Assets/icons/orange-right-arrow.svg);
   vertical-align: text-bottom;
 }
 
