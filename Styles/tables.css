@@ -17,7 +17,7 @@
 }
 
 .bitcoin-img-container {
-  background-image: url(/Assets/img/bitcoinbaby2x.png);
+  background-image: url(../Assets/img/bitcoinbaby2x.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
