@@ -195,20 +195,8 @@ main {
 }
 
 .main-tables-container {
-  display: flex;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-}
-
-/* Funcion Scroll bar en tablas del primer div */
-.main-tables-container::-webkit-scrollbar {
-  background-color: var(--soft-orange);
-  height: 3px;
-}
-
-.main-tables-container::-webkit-scrollbar-thumb {
-  background-color: var(--bitcoin-orange);
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .main-currency-table {
@@ -229,8 +217,7 @@ main {
   line-height: 2.3rem;
 }
 .main-tables-container .currency-table-1 {
-  margin-left: 120px;
-  margin-right: 50px;
+  margin: 0 auto;
 }
 
 .main-currency-table .first-table {
@@ -315,8 +302,7 @@ main {
   border-radius: 8px;
 }
 .main-tables-container .currency-table-2 {
-  margin-left: 50px;
-  margin-right: 120px;
+  margin: 0 auto;
 }
 .first-currency {
   background-color: var(--soft-orange);
@@ -331,6 +317,14 @@ main {
 
 .second-currency {
   background-color: var(--soft-blue);
+}
+
+@media (min-width: 750px) {
+  .main-tables-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
 }
 
 /* contenedor 2 PRODUCTOS */
