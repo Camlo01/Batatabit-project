@@ -1,5 +1,13 @@
-## PROYECTO BATA BIT
+## PROYECTO BATA BIT 💻🍊
 
-Proyecto de sitio web responsitivo hecho dentro del curso de platzi [Curso Definitivo de HTML y CSS]
+Proyecto de sitio web hecho con platzi [Curso Definitivo de HTML y CSS 🎓] con el fin de añadir al portafolio
 
-Este es un proyecto hecho con ayuda de platzi con el fin de añadir a portafolio
+# Puntos a destacar ⚡
+
+- sitio responsitivo 🖥 📱
+
+- con animaciones 🎞
+
+- incluye request a API de Coinbase
+para saber el precio de criptomonedas 🦙💲
+
