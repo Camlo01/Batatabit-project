@@ -72,7 +72,7 @@ function getUSDTPrice() {
     dataType: "JSON",
     success: function (tether) {
       // Asignando precio a una bariable = pasarlo a entero
-      let precio = "$" + Math.trunc(tether.src_side_base[0].rate);
+      let precio = "$" + Math.trunc(tether.rate);
       console.log("de inicializa el precio del Tether en una variable");
       printUSDTPrice(precio);
       console.log("se imprime en el DOM el precio del Tether");
@@ -154,6 +154,7 @@ function printBnbPrice(precio) {
 // ------------------------------------------------------------------------------------------------
 
 function printBitcoinDefault() {
+  // let valorDefecto = "$XXXX";
   let valorDefecto = "$40.122";
   let parrafo = "<price>";
   for (i = 0; i < 1; i++) {
@@ -163,6 +164,7 @@ function printBitcoinDefault() {
 }
 
 function printEthereumDefault() {
+  // let valorDefecto = "$XXXX";
   let valorDefecto = "$2.965";
   let parrafo = "<price>";
   for (i = 0; i < 1; i++) {
@@ -172,6 +174,7 @@ function printEthereumDefault() {
 }
 
 function printTetherDefault() {
+  // let valorDefecto = "$XXXX";
   let valorDefecto = "$3.935";
   let parrafo = "<price>";
   for (i = 0; i < 1; i++) {
@@ -181,6 +184,7 @@ function printTetherDefault() {
 }
 
 function printBnbDefault() {
+  // let valorDefecto = "$XXXX";
   let valorDefecto = "$402";
   let parrafo = "<price>";
   for (i = 0; i < 1; i++) {
