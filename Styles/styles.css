@@ -259,14 +259,19 @@ main {
   border-radius: 0 0 0 15px;
 }
 .currency-table--container .table__bottom-right {
-  border-radius: 0 0 15px 0;
+  border-radiFus: 0 0 15px 0;
 }
-
 .currency-table--container .table__right {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
   color: #757575;
+}
+
+.price__script p {
+  width: 0px;
+  height: 0px;
+  margin: 0 calc(28%);
 }
 
 .currency-table--container .down {
