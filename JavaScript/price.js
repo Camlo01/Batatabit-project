@@ -53,7 +53,7 @@ function getETHPrice() {
       // Asignando precio a una bariable = pasarlo a entero
       let precio = "$" + Math.trunc(ethereum.src_side_base[0].rate);
       console.log("de inicializa el precio del Ethereum en una variable");
-      printBTCPrice(precio);
+      printETHPrice(precio);
       console.log("se imprime en el DOM el precio del Ethereum");
     },
     error: function (error) {
@@ -136,7 +136,7 @@ function printUSDTPrice(precio) {
     parrafo += "<p>" + precio + "</p>";
   }
 
-  $("#priceEthereum").html(parrafo);
+  $("#priceTether").html(parrafo);
 }
 
 //Printar precio de Bnb en tabla
