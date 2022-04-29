@@ -163,7 +163,7 @@ main {
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url(Assets/img/Bitcoin.svg);
+  background-image: url(../Assets/img/Bitcoin.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -279,7 +279,7 @@ main {
   width: 15px;
   height: 15px;
   margin-left: 10px;
-  background-image: url(Assets/icons/trending-down.svg);
+  /* background-image: url(Assets/icons/trending-down.svg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ main {
   width: 15px;
   height: 15px;
   margin-left: 10px;
-  background-image: url(Assets/icons/trending-up.svg);
+  /* background-image: url(..Assets/icons/trending-up.svg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -351,7 +351,7 @@ main {
   height: 25px;
   top: -10px;
   left: calc(50% - 20px);
-  background-image: url(Assets/icons/batata.svg);
+  background-image: url(../Assets/icons/batata.svg);
 }
 
 .product-detail--title {
