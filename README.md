@@ -1,13 +1,18 @@
 ## PROYECTO BATA BIT 💻🍊
 
-Proyecto de sitio web hecho con platzi [Curso Definitivo de HTML y CSS 🎓] con el fin de añadir al portafolio
+Proyecto sitio web hecho con platzi [Curso Definitivo de HTML y CSS 🎓] con el fin de aprender HTML y CSS pero con el paso del tiempo he escalado el proyecto y he agregado código JavaScript con el que he logrado consumir  la API de ![image](https://user-images.githubusercontent.com/96300875/166109569-e306f626-9a34-49e6-81ac-57d0271db01e.png) con la que he logrado traer el precio actualizado de algunas criptomonedas 
 
 # Puntos a destacar ⚡
 
-- sitio responsitivo 🖥 📱
+- Website responsive 🖥 📱
 
-- con animaciones 🎞
+- Incluye animaciones 🎞
 
-- incluye request a API de Coinbase
-para saber el precio de criptomonedas 🦙💲
+- Consume API de coinbase para traer precio
+de criptomonedas 🦙2️⃣💰💲
 
+- Llamados AJAX
+
+------------------------------------
+
+Link: https://camlo01.github.io/Batatabit-project/
