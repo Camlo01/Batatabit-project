@@ -13,23 +13,18 @@ Proyecto sitio web hecho con Platzi [Curso Definitivo de HTML y CSS 🎓] con el
 ## Puntos a destacar ⚡
 
 - Website responsive 📱🖥 
-
 - Diseño Mobile First
-
 - Se aplica metodologia BEM
-
 - se Incluyen animaciones 🎞
-
 - Consume API de coinbase para traer precio
 de criptomonedas 🦙2️⃣💰💲
-
 - Llamados AJAX
 
 ## Próximo a implementar 🚧🔧🔨
 
-- Agregar costo de comisiones reales
+- Agregar costo de comisiones reales 💱
 - Animaciones sobre tarjetas
-- Añadir modal llamados por el boton de escoger plan
+- Añadir modal llamados por el boton de escoger plan 
 
 ------------------------------------
 
