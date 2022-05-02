@@ -617,18 +617,22 @@ footer section {
   align-items: center;
 }
 
-footer .left ul {
+footer .footer--left ul {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   list-style: none;
 }
 
-.left li {
+.footer--leftleft li {
   margin: 10px 0;
 }
 
-.left a {
+.footer--left a {
   text-decoration: none;
   color: var(--just-white);
+}
+
+.footer--left:hover{
+  color: black;
 }
