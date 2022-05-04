@@ -41,7 +41,6 @@ function getETHPrice() {
   }, 800);
 }
 
-
 function getBNBPrice() {
   setTimeout(() => {
     fetch(
