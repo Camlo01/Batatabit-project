@@ -18,7 +18,7 @@ Proyecto sitio web hecho con Platzi [Curso Definitivo de HTML y CSS 🎓] con el
 - se Incluyen animaciones 🎞
 - Consume API de coinbase para traer precio
 de criptomonedas 🦙2️⃣💰💲
-- Llamados AJAX
+- Llamados fetch (Ajax fue eliminado)
 
 ## Próximo a implementar 🚧🔧🔨
 
