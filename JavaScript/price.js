@@ -44,7 +44,7 @@ function getBTCPrice() {
 
 // Ethereum = ETH
 function getETHPrice() {
-  console.log("se trae precio Ethereum");
+  console.log("se trae precio Ethereum getETHPrice()");
   $.ajax({
     url: "https://rest.coinapi.io/v1/exchangerate/ETH/USD?apikey=3B1B6709-207F-46FC-B7D1-576A99BBF416",
     type: "GET",
@@ -65,7 +65,7 @@ function getETHPrice() {
 
 // Tether = USDT
 function getUSDTPrice() {
-  console.log("se trae precio Tether");
+  console.log("se trae precio Tether getUSDTPrice()");
   $.ajax({
     url: "https://rest.coinapi.io/v1/exchangerate/USDT/USD?apikey=3B1B6709-207F-46FC-B7D1-576A99BBF416",
     type: "GET",
@@ -86,7 +86,7 @@ function getUSDTPrice() {
 
 // Bnb = BNB
 function getBNBPrice() {
-  console.log("se trae precio Bnb");
+  console.log("se trae precio Bnb getBNBPrice()");
   $.ajax({
     url: "https://rest.coinapi.io/v1/exchangerate/BNB/USD?apikey=3B1B6709-207F-46FC-B7D1-576A99BBF416",
     type: "GET",
@@ -115,7 +115,7 @@ function printBTCPrice(precio) {
   for (i = 0; i < 1; i++) {
     parrafo += "<p>" + precio + "</p>";
   }
-
+  console.log("Se imprime Bitcoin en <price>");
   $("#priceBitcoin").html(parrafo);
 }
 
@@ -126,6 +126,7 @@ function printETHPrice(precio) {
     parrafo += "<p>" + precio + "</p>";
   }
 
+  console.log("Se imprime Ethereum en <price>");
   $("#priceEthereum").html(parrafo);
 }
 
@@ -136,6 +137,7 @@ function printUSDTPrice(precio) {
     parrafo += "<p>" + precio + "</p>";
   }
 
+  console.log("Se imprime Tether en <price>");
   $("#priceTether").html(parrafo);
 }
 
@@ -146,7 +148,8 @@ function printBnbPrice(precio) {
     parrafo += "<p>" + precio + "</p>";
   }
 
-  $("#priceBnb").html(parrafo);
+  console.log("Se imprime BNB en <price>");
+    $("#priceBnb").html(parrafo);
 }
 
 // ------------------------------------------------------------------------------------------------
@@ -160,6 +163,7 @@ function printBitcoinDefault() {
   for (i = 0; i < 1; i++) {
     parrafo += "<p>" + valorDefecto + "</p>";
   }
+  console.log("se ejecuta valor por defecto Bitcoin")
   $("#priceBitcoin").html(parrafo);
 }
 
@@ -170,6 +174,7 @@ function printEthereumDefault() {
   for (i = 0; i < 1; i++) {
     parrafo += "<p>" + valorDefecto + "</p>";
   }
+  console.log("se ejecuta valor por defecto Ethereum")
   $("#priceEthereum").html(parrafo);
 }
 
@@ -180,6 +185,7 @@ function printTetherDefault() {
   for (i = 0; i < 1; i++) {
     parrafo += "<p>" + valorDefecto + "</p>";
   }
+  console.log("se ejecuta valor por defecto Tether")
   $("#priceTether").html(parrafo);
 }
 
