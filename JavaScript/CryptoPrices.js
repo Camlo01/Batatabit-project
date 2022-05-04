@@ -41,21 +41,6 @@ function getETHPrice() {
   }, 800);
 }
 
-function getUSDTPrice() {
-  setTimeout(() => {
-    fetch(
-      "https://rest.coinapi.io/v1/exchangerate/USDT/USD?apikey=3B1B6709-207F-46FC-B7D1-576A99BBF416"
-    )
-      .then((response) => response.json())
-      .then(function (data) {
-        let tetherValue = data.rate;
-        let precio = "$" + tetherValue.toFixed(2);
-        console.log("Se inicializa el precio del TETHER en una variable");
-        $("#priceTether").html(printPrice(precio));
-      })
-      .catch((error) => console.log("TETHER Se presentó el ERROR " + error));
-  }, 1200);
-}
 
 function getBNBPrice() {
   setTimeout(() => {
@@ -70,6 +55,21 @@ function getBNBPrice() {
       })
       .catch((error) => console.log(" BNB Se presentó el ERROR " + error));
   }, 1600);
+}
+function getUSDTPrice() {
+  setTimeout(() => {
+    fetch(
+      "https://rest.coinapi.io/v1/exchangerate/USDT/USD?apikey=3B1B6709-207F-46FC-B7D1-576A99BBF416"
+    )
+      .then((response) => response.json())
+      .then(function (data) {
+        let tetherValue = data.rate;
+        let precio = "$" + tetherValue.toFixed(2);
+        console.log("Se inicializa el precio del TETHER en una variable");
+        $("#priceTether").html(printPrice(precio));
+      })
+      .catch((error) => console.log("TETHER Se presentó el ERROR " + error));
+  }, 1200);
 }
 
 //Funcion imprimir precio en etiqueta parrafo
