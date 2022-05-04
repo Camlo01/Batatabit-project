@@ -48,7 +48,8 @@ function getUSDTPrice() {
     )
       .then((response) => response.json())
       .then(function (data) {
-        let precio = "$" + Math.trunc(data.rate);
+        let tetherValue = data.rate;
+        let precio = "$" + tetherValue.toFixed(2);
         console.log("Se inicializa el precio del TETHER en una variable");
         $("#priceTether").html(printPrice(precio));
       })
@@ -63,7 +64,7 @@ function getBNBPrice() {
     )
       .then((response) => response.json())
       .then(function (data) {
-        let precio = "$" + Math.trunc(Math.trunc(data.src_side_base[0].rate));
+        let precio = "$" + Math.trunc(data.src_side_base[0].rate);
         console.log("Se inicializa el precio del BNB");
         $("#priceBnb").html(printPrice(precio));
       })
