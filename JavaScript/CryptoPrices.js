@@ -53,7 +53,7 @@ function getBNBPrice() {
         $("#priceBnb").html(printPrice(precio));
       })
       .catch((error) => console.log(" BNB Se presentó el ERROR " + error));
-  }, 1600);
+  }, 1200);
 }
 function getUSDTPrice() {
   setTimeout(() => {
@@ -68,7 +68,7 @@ function getUSDTPrice() {
         $("#priceTether").html(printPrice(precio));
       })
       .catch((error) => console.log("TETHER Se presentó el ERROR " + error));
-  }, 1200);
+  }, 1600);
 }
 
 //Funcion imprimir precio en etiqueta parrafo
