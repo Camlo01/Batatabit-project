@@ -259,7 +259,7 @@ main {
   border-radius: 0 0 0 15px;
 }
 .currency-table--container .table__bottom-right {
-  border-radiFus: 0 0 15px 0;
+  border-radifus: 0 0 15px 0;
 }
 .currency-table--container .table__right {
   font-size: 1.4rem;
@@ -633,6 +633,11 @@ footer .footer--left ul {
   color: var(--just-white);
 }
 
-.footer--left:hover{
+.footer--left a:hover {
+  color: black;
+  font-weight: 500;
+}
+
+.footer--left:hover {
   color: black;
 }
