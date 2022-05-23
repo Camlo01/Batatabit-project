@@ -8,14 +8,17 @@
 /* COLORES */
 :root {
   --bitcoin-orange: #f7931a;
+  --bitcoin-orange-contrast: #c8700b;
   --soft-orange: #ffe9d5;
   --secondary-blue: #1a9af7;
+  --secondary-blue-contrast: #0080db;
   --soft-blue: #e7f5ff;
   --warm-black: #201e1c;
   --black: #282623;
   --grey: #bababa;
+  --grey-contrast: #7e7e7e;
   --off-white: #faf8f7;
-  --just-white: #ffffff;
+  --just-white: #fff;
 }
 
 * {
@@ -44,6 +47,7 @@ header {
   text-align: center;
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
 }
+
 header img {
   width: 150px;
   height: 24px;
@@ -92,6 +96,7 @@ header img {
   line-height: 2.6rem;
   color: var(--just-white);
 }
+
 .header--title-container p {
   margin-top: 25px;
   font-size: 1.4rem;
@@ -119,6 +124,7 @@ header img {
   text-decoration: none;
   color: var(--black);
 }
+
 .header--title-container .header--buttom:hover {
   background-color: rgb(210, 207, 207);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
@@ -149,6 +155,7 @@ main {
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
+  background-color: var(--off-white);
 }
 
 .main-exchange-container--title {
@@ -170,15 +177,18 @@ main {
   /* se le agrega animacion a la imagen  */
   animation: rotation 5s infinite linear;
 }
+
 /* se configura la animacion de la imagen */
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
 }
+
 .main-exchange-container h2 {
   margin-bottom: 30px;
   font-size: 2.4rem;
@@ -186,6 +196,7 @@ main {
   line-height: 2.6rem;
   color: var(--black);
 }
+
 .main-exchange-container p {
   margin-bottom: 30px;
   font-size: 1.4rem;
@@ -216,15 +227,17 @@ main {
   font-weight: bold;
   line-height: 2.3rem;
 }
+
 .main-tables-container .currency-table-1 {
   margin: 0 auto;
 }
 
 .main-currency-table .first-table {
-  color: var(--bitcoin-orange);
+  color: var(--bitcoin-orange-contrast);
 }
+
 .main-currency-table .second-table {
-  color: var(--secondary-blue);
+  color: var(--secondary-blue-contrast);
 }
 
 .currency-table--container {
@@ -234,6 +247,7 @@ main {
   height: 250px;
   margin: 0 auto;
 }
+
 .currency-table--container table {
   width: 100%;
   height: 100%;
@@ -244,7 +258,7 @@ main {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
-  color: var(--grey);
+  color: var(--grey-contrast);
   background-color: var(--just-white);
 }
 
@@ -252,15 +266,19 @@ main {
 .currency-table--container .table__top-left {
   border-radius: 15px 0 0 0;
 }
+
 .currency-table--container .table__top-right {
   border-radius: 0 15px 0 0;
 }
+
 .currency-table--container .table__bottom-left {
   border-radius: 0 0 0 15px;
 }
+
 .currency-table--container .table__bottom-right {
   border-radifus: 0 0 15px 0;
 }
+
 .currency-table--container .table__right {
   font-size: 1.4rem;
   font-weight: normal;
@@ -306,18 +324,22 @@ main {
   padding: 6px;
   border-radius: 8px;
 }
+
 .main-tables-container .currency-table-2 {
   margin: 0 auto;
 }
+
 .first-currency {
   background-color: var(--soft-orange);
 }
+
 .currency-table--date p {
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.5rem;
   color: var(--warm-black);
 }
+
 /* actualizar 2 */
 
 .second-currency {
@@ -376,7 +398,8 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: #cacaca;
+  /* color: #808080; */
 }
 
 .product-detail--card {
@@ -429,7 +452,8 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: #cecece;
+  /* color: #808080; */
 }
 
 .bitcoin-img-container {
@@ -441,6 +465,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .bitcoin-img-container h2 {
   padding-top: 60px;
   font-size: 2.4rem;
@@ -459,7 +484,9 @@ main {
   min-width: 320px;
   padding-bottom: 70px;
   text-align: center;
+  background-color: var(--off-white);
 }
+
 .plans--title {
   width: 90%;
   min-width: 288px;
@@ -550,6 +577,7 @@ main {
   line-height: 6.3rem;
   color: black;
 }
+
 .plan-card--price .dolar-sign {
   position: absolute;
   font-size: 1.2rem;
@@ -557,6 +585,7 @@ main {
   left: 73px;
   top: 39px;
 }
+
 .plan-card--price .dolar-sign2 {
   position: absolute;
   font-size: 1.2rem;
@@ -619,7 +648,7 @@ footer section {
 
 footer .footer--left ul {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.8rem;
   list-style: none;
 }
@@ -630,14 +659,14 @@ footer .footer--left ul {
 
 .footer--left a {
   text-decoration: none;
-  color: var(--just-white);
+  color: black;
 }
 
 .footer--left a:hover {
-  color: black;
-  font-weight: 500;
+  color: var(--just-white);
+  font-weight: 580;
 }
 
 .footer--left:hover {
-  color: black;
+  color: var(--just-white);
 }
