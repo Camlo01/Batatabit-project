@@ -20,9 +20,10 @@ function getBTCPrice() {
       .then(function (data) {
         let precio = "$" + Math.trunc(data.src_side_base[0].rate);
         console.log("Se inicializa el precio de BITCOIN en una variable");
-        $("#priceBitcoin").html(printPrice(precio));
+        document.getElementById("priceBitcoin").innerHTML = convertToHtml(precio);
       })
       .catch((error) => console.log("BITCOIN Se presentó el ERROR " + error));
+    document.getElementById("priceBitcoin").innerHTML = convertToHtml("$30.000");
   }, 400);
 }
 
@@ -35,9 +36,11 @@ function getETHPrice() {
       .then(function (data) {
         let precio = "$" + Math.trunc(data.src_side_base[0].rate);
         console.log("Se inicializa el precio del ETHEREUM en una variable");
-        $("#priceEthereum").html(printPrice(precio));
+
+        document.getElementById("priceEthereum").innerHTML = convertToHtml(precio);
       })
       .catch((error) => console.log(" ETHEREUM Se presentó el ERROR " + error));
+    document.getElementById("priceEthereum").innerHTML = convertToHtml("$1.800");
   }, 800);
 }
 
@@ -50,9 +53,10 @@ function getBNBPrice() {
       .then(function (data) {
         let precio = "$" + Math.trunc(data.src_side_base[0].rate);
         console.log("Se inicializa el precio del BNB");
-        $("#priceBnb").html(printPrice(precio));
+        document.getElementById("priceBnb").innerHTML = convertToHtml(precio);
       })
       .catch((error) => console.log(" BNB Se presentó el ERROR " + error));
+    document.getElementById("priceBnb").innerHTML = convertToHtml("$300");
   }, 1200);
 }
 function getUSDTPrice() {
@@ -65,17 +69,18 @@ function getUSDTPrice() {
         let tetherValue = data.rate;
         let precio = "$" + tetherValue.toFixed(2);
         console.log("Se inicializa el precio del TETHER en una variable");
-        $("#priceTether").html(printPrice(precio));
+        document.getElementById("priceTether").innerHTML = convertToHtml(precio);
       })
       .catch((error) => console.log("TETHER Se presentó el ERROR " + error));
+    document.getElementById("priceTether").innerHTML = convertToHtml("$1");
   }, 1600);
 }
 
 //Funcion imprimir precio en etiqueta parrafo
-function printPrice(precio) {
-  let parrafo = "<price>";
+function convertToHtml(precio) {
+  let parrafo = "<div>";
   for (i = 0; i < 1; i++) {
-    parrafo += "<p>" + precio + "<p>";
+    parrafo += "<p>" + precio + "<p> </div>";
   }
   return parrafo;
 }
