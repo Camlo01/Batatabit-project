@@ -463,7 +463,7 @@ main {
   width: 100%;
   min-width: 320px;
   height: 55vh;
-  background-image: url(../Assets/img/bitcoinbaby.jpg);
+  background-image: url(../Assets/img/bitcoinbaby.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
