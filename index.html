@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./Styles/styles.css">
     <link rel="stylesheet" href="./Styles/tables.css" media="(min-width: 920px)">
     <!-- <script src="JavaScript/price.js"></script> -->
-    <script src="./JavaScript/CryptoPrices.js"></script>
+    <script type="module" src="./JavaScript/CryptoPrices.js"></script>
 </head>
 
 <body>
@@ -48,7 +48,7 @@
                                 <td class="table__top-left">Bitcoin</td>
                                 <td class="table__top-right table__right">
                                     <div id="priceBitcoin" class="table-container__getPrice price__script">
-                                        <script> getBTCPrice();</script>
+                                        <script> cryptoPrice('BTC', 'USD', 'priceBitcoin');</script>
                                     </div>
                                     <span class="down"></span>
                                 </td>
@@ -57,7 +57,7 @@
                                 <td>Ethereum</td>
                                 <td class="table__right">
                                     <div id="priceEthereum" class="table-container__getPrice price__script">
-                                        <script>getETHPrice();</script>
+                                        <script>cryptoPrice('ETH', 'USD', 'priceEthereum');</script>
                                     </div>
                                     <span class="up"></span>
                                 </td>
@@ -66,7 +66,7 @@
                                 <td>Bnb</td>
                                 <td class="table__right">
                                     <div id="priceBnb" class="table-container__getPrice price__script">
-                                        <script>getBNBPrice();</script>
+                                        <script>cryptoPrice('BNB', 'USD', 'priceBnb');</script>
                                     </div>
 
                                     <span class="down"></span>
@@ -76,7 +76,7 @@
                                 <td class="table__bottom-left">Tether</td>
                                 <td class="table__bottom-right table__right">
                                     <div id="priceTether" class="table-container__getPrice price__script">
-                                        <script>getUSDTPrice();</script>
+                                        <script>cryptoPrice('USDT', 'USD', 'priceTether');</script>
                                     </div>
                                     <span class="down"></span>
                                 </td>
