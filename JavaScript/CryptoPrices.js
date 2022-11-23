@@ -62,12 +62,7 @@ async function cryptoPrice(Crypto, Currency, wherePrintIt) {
  * @returns String of HTML code
  */
 function convertToHtml(text) {
-  let htmlCode = `<div>`;
-  for (i = 0; i < 1; i++) {
-    htmlCode += `<p>${text}<p></div>`;
-  }
-  return htmlCode;
-  too;
+  return `<div><p>${text}<p></div>`;
 }
 
 /**
@@ -76,9 +71,23 @@ function convertToHtml(text) {
  * @param {String} currency
  * @returns full url
  */
-
 function fullUrl(crypto, currency) {
   const apiKey = `12E42E01-F5AA-413C-AFAE-BA3180D99EE3`;
+  // const apiKey = `3B1B6709-207F-46FC-B7D1-576A99BBF416`;
   const url = `https://rest.coinapi.io/v1/exchangerate/${crypto}/${currency}?apikey=${apiKey}`;
   return url;
 }
+
+//Executing crypto prices to find
+setTimeout(() => {
+  cryptoPrice("BTC", "USD", "priceBitcoin");
+}, 150);
+setTimeout(() => {
+  cryptoPrice("ETH", "USD", "priceEthereum");
+}, 300);
+setTimeout(() => {
+  cryptoPrice("BNB", "USD", "priceBnb");
+}, 450);
+setTimeout(() => {
+  cryptoPrice("USDT", "USD", "priceTether");
+}, 600);
